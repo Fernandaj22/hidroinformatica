@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hidroinformática - ¿Qué es RedCIAQ?</title>
+    <title>Hidroinformática - Plantilla</title>
     <meta charset="utf-8">
     <!-- STYLES -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/bcss/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/bcss/bootstrap.min.css">
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800&display=swap" rel="stylesheet">
     <!-- JS -->
-    <script type="text/javascript" src="js/bjs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bjs/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,18 +23,32 @@
         <img src="" alt="" id="decorador">
     </header>
     <div id="contenido">
-        <h3>¿Qué es RedCIAQ?</h3>
-        <p>Para obtener información detallada de cada estación, da click en el marcador correspondiente sobre el mapa.</p>    
-        <p>La RedCIAQ es la red de monitoreo de precipitaciones extremas en el Estado de Querétaro.</p>
-        <div id="participantes">
-            <h6>Colaboradores</h6>
-            <img src="" alt="" id="redCIAQLogo">
-            <img src="" alt="" id="FIFLogo">
-            <img src="" alt="" id="UAQLogo">
-            <img src="" alt="" id="FILogo">
-            <img src="" alt="" id="prodepLogo">
-        </div>
-        <div id="texto"></div>
+        <a href="#"> 
+            <img src="" alt="">
+            Regresar a menú de herramientas
+        </a>
+        <h3>Tabla de Datos</h3>
+        <form action="">
+                <select name="estaciones" id="estaciones">
+                    <option value="1">Estación # 1 - Jurica, Querétaro</option>
+                </select> <br>
+    
+                <label for="horaInicio">De</label>
+                <input type="text" name="horaInicio" id="horaInicio">
+                <label for="horaFin">a</label>
+                <input type="text" name="horaFin" id="horaFin">
+                <br>
+    
+                <input type="radio" name="anterior" id="anterior">
+                <label for="anterior">Formato Anterior</label>
+                <br>
+    
+                <input type="radio" name="actual" id="actual">
+                <label for="actual">Formato Actual</label>
+                <br>
+    
+                <button>Enviar Solicitud</button>
+            </form>
     </div>
     <footer>
         <div id="mapaDelSitio">
@@ -73,4 +87,3 @@
                 <img src="" alt="" id="decorador">
     </footer>
 </body>
-        
