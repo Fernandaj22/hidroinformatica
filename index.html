@@ -3,117 +3,48 @@
 <head>
 	<title>Hidroinformática</title>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- STYLES -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/bcss/bootstrap.min.css">
 	<!-- FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800&display=swap" rel="stylesheet">
 	<!-- JS -->
-	<script type="text/javascript" src="js/functions.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 
-	<nav class="barra navbar navbar-expand-lg navbar-light bg-light">
-		  	<a class="navbar-brand logo" href="#"><img src="img/redciaq.png"></a>
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class="navbar-toggler-icon"></span>
-		  	</button>
-		  	<div class="collapse navbar-collapse" id="navbarNav">
-			    <ul class="navbar-nav ml-auto">
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">NOSOTROS</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">METEOROLOGÍA</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">TORMENTAS</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">PRENSA</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">HERRAMIENTAS</a>
-		            </li>
-					<h1>Hola</h1>
-		        </ul>
-		  	</div>
-		</nav>
+	<div class="container-fluid backimg column" id="backimg">
+		<div class="barra between col-sm-12 col-md-12">
+			<div class="logo flex">
+				<img src="img/redciaq.png">
+			</div>
 
-	<div class="backimg column" id="backimg">
-		<nav class="barra navbar navbar-expand-lg navbar-light bg-light">
-		  	<a class="navbar-brand logo" href="#"><img src="img/redciaq.png"></a>
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class="navbar-toggler-icon"></span>
-		  	</button>
-		  	<div class="collapse navbar-collapse" id="navbarNav">
-			    <ul class="navbar-nav ml-auto">
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">NOSOTROS</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">METEOROLOGÍA</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">TORMENTAS</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">PRENSA</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">HERRAMIENTAS</a>
-		            </li>
-		        </ul>
-		  	</div>
-		</nav>
+			<div class="menu">
+				<ul>
+					<li class="flex"><a>NOSOTROS</a></li>
+					<li class="flex"><a>METEOROLOGÍA</a></li>
+					<li class="flex"><a>TORMENTAS</a></li>
+					<li class="flex"><a>PRENSA</a></li>
+					<li class="flex"><a>HERRAMIENTAS</a></li>
+				</ul>
+			</div>
+		</div>
 
-		<div class="tiempo fade-in-top">
+		<div class="tiempo fade-in-top col-sm-12 col-md-12 column">
 			<h2>Te encuentras en</h2>
 			<h1>Av. de las Ciencias</h1>
 			<h2>con temperatura de</h2>
 			<h1 class="grados">18º C</h1>
 		</div>
 
-		<div class="resumen">
+		<div class="resumen col-sm-12 col-md-12 column">
 			<h3>RESUMEN</h3>
 			<h2>METEOROLÓGICO</h2>
 			<img src="img/down.png" onclick="goIndex()">
 		</div>
-	</div>
-
-	<div class="contenedor" id="contenedor">
-
-		<nav class="barra navbar navbar-expand-lg navbar-dark">
-   			<a class="navbar-brand logo" href=""><img src="img/redciaq.png"></a>
-
-		   	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-		        <span class="navbar-toggler-icon"></span>
-		    </button>
-    
-		    <div class="collapse navbar-collapse menu" id="#navbarTogglerDemo02">
-		        <ul class="navbar-nav ml-auto">
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">NOSOTROS</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">METEOROLOGÍA</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">TORMENTAS</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">PRENSA</a>
-		            </li>
-		            <li class="nav-item flex">
-		                <a class="nav-link" href="">HERRAMIENTAS</a>
-		            </li>
-		        </ul>
-		    </div>
-		</nav>
 	</div>
 
 </body>
