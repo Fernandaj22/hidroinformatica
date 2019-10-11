@@ -29,27 +29,25 @@
         </a>
         <h3>Tabla de Datos</h3>
         <p>Seleccione la fecha inicial y final del reporte, y la estación de la cual desea descargar los datos.</p>
-        <form action="">
-            <select name="estaciones" id="estaciones">
-                <option value="1">Estación # 1 - Jurica, Querétaro</option>
-            </select> <br>
-
-            <label for="horaInicio">De</label>
-            <input type="text" name="horaInicio" id="horaInicio">
-            <label for="horaFin">a</label>
-            <input type="text" name="horaFin" id="horaFin">
-            <br>
-
-            <input type="radio" name="anterior" id="anterior">
-            <label for="anterior">Formato Anterior</label>
-            <br>
-
-            <input type="radio" name="actual" id="actual">
-            <label for="actual">Formato Actual</label>
-            <br>
-
-            <button>Enviar Solicitud</button>
-        </form>
+        <select name="estaciones" id="estaciones">
+            <option value="1">Estación # 1 - Jurica, Querétaro</option>
+        </select> <br>
+        
+        <label for="horaInicio">De</label>
+        <input type="time" name="horaInicio" id="horaInicio" placeholder="00:00:00 a.m.">
+        <label for="horaFin">a</label>
+        <input type="time" name="horaFin" id="horaFin" placeholder="00:00:00 a.m.">
+        <br>
+        
+        <input type="radio" name="anterior" id="anterior">
+        <label for="anterior">Formato Anterior</label>
+        <br>
+        
+        <input type="radio" name="actual" id="actual">
+        <label for="actual">Formato Actual</label>
+        <br>
+        
+        <button>Enviar Solicitud</button>
     </div>
     <footer>
         <div id="mapaDelSitio">
@@ -86,5 +84,6 @@
                 <hr>
                 <p>Red de monitoreo de precipitaciones extremas del Estado de Querétaro | Desarrollado por el Centro de Desarrollo, 2019</p>
                 <img src="" alt="" id="decorador">
-    </footer>
-</body>
+            </footer>
+        </body>
+</html>

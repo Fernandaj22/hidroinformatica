@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Hidroinformática - Plantilla</title>
     <meta charset="utf-8">
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/bcss/bootstrap.min.css">
-    <title>Hidroinformática - Histograma</title>
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800&display=swap" rel="stylesheet">
     <!-- JS -->
@@ -27,23 +27,55 @@
             <img src="" alt="">
             Regresar a menú de herramientas
         </a>
-        <h3>Histograma</h3>
-        <p>Seleccione la fecha inicial y final, así como la hora inicial y final del reporte para generar el histograma correspondiente.</p>
-        <form action="">
-                <label for="horaInicio">De</label>
-                <input type="text" name="horaInicio" id="horaInicio">
-                <label for="horaFin">a</label>
-                <input type="text" name="horaFin" id="horaFin">
-                <br>
+        <h3>Descargas</h3>
+        <div class="paso1">
+            <p>PASO</p>
+            <p>1</p>
+            
+            <p>Seleccione la estación deseada</p>
+            <select name="estaciones" id="estaciones">
+                <option value="1">Estación # 1 - Jurica, Querétaro</option>
+            </select> <br>
+            
+            <p>Seleccione los valores climáticos que desee en el informe</p>
+            <input type="checkbox" name="" value="wind_direction" />
+            <label>Dirección de Viento</label>
+            <input type="checkbox" name="" value="wind_direction_degree" />
+            <label>Grado de dirección de Viento</label>
+            <input type="checkbox" name="" value="wind_velocity" />
+            <label>Velocidad de Viento</label>
+            <input type="checkbox" name="chck[]" value="temp" />
+            <label>Temperatura</label>
+            <input type="checkbox" name="" value="humidity" />
+            <label>Humedad</label>
+            <input type="checkbox" name="" value="barometer" />
+            <label>Barómetro</label><br/>
+            <input type="checkbox" name="" value="rain" />
+            <label>Lluvia</label>
+            <input type="checkbox" name="" value="rain_density" />
+            <label>Intensidad de Lluvia</label>
+            <input type="checkbox" name="" value="solar_radiation" />
+            <label>Radiación Solar</label>
+            <input type="checkbox" name="" value="wind_chill" />
+            <label>Sensación Térmica</label>
+            <input type="checkbox" name="" value="heat_index" />
+            <label>Índice de Calor</label>
+            <input type="checkbox" name="" value="dew_point" />
+            <label>Punto de Rocio</label>
+        </div>
+        <div class="paso2">
+            <p>PASO</p>
+            <p>2</p>
 
-                <label for="fechaInicio">De</label>
-                <input type="date" name="fechaInicio" id="fechaInicio">
-                <label for="fechaFin">a</label>
-                <input type="date" name="fechaFin" id="fechaFin">
-                <br>
-    
-                <button>Enviar Solicitud</button>
-            </form>
+            <p>Seleccione el intervalo de tiempo que desee</p>
+            <label for="fechaInicio">De</label>
+            <input type="date" name="fechaInicio" id="fechaInicio">
+            <label for="fechaFin">a</label>
+            <input type="date" name="fechaFin" id="fechaFin">
+        </div>
+
+        <button>Enviar Solicitud</button>
+        
     </div>
     <footer>
         <div id="mapaDelSitio">
@@ -80,5 +112,7 @@
                 <hr>
                 <p>Red de monitoreo de precipitaciones extremas del Estado de Querétaro | Desarrollado por el Centro de Desarrollo, 2019</p>
                 <img src="" alt="" id="decorador">
+            </div>
     </footer>
 </body>
+</html>    
