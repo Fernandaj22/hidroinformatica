@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hidroinformática</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Estilo -->
+	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
+	<!-- Js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <!-- Font -->
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body id="backImg">
+
+	<div class="bg" id="bg"></div>
+
+	<!-- VERSION DESK -->
+	<div class="barra between hidden-xs hidden-sm col-md-12">
+		<div class="logo flex">
+			<img src="img/redciaq.png">
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li class="flex"><a>NOSOTROS</a></li>
+				<li class="flex"><a>METEOROLOGÍA</a></li>
+				<li class="flex"><a>TORMENTAS</a></li>
+				<li class="flex"><a>PRENSA</a></li>
+				<li class="flex"><a>HERRAMIENTAS</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- VERSION MOVIL -->
+	<div class="barra between col-xs-12 hidden-md hidden-lg" id="barram">
+		<div class="logo flex">
+			<img src="img/redciaq.png">
+		</div>
+
+		<div class="menu" id="menu">
+			<div class="ham flex">
+				<img src="img/list.png" onclick="goOptions()">
+			</div>
+		</div>
+	</div>
+
+	<ul class="opciones col-xs-12 hidden-md hidden-lg" id="options">
+		<li class="flex"><a>NOSOTROS</a></li>
+		<li class="flex"><a>METEOROLOGÍA</a></li>
+		<li class="flex"><a>TORMENTAS</a></li>
+		<li class="flex"><a>PRENSA</a></li>
+		<li class="flex"><a>HERRAMIENTAS</a></li>
+	</ul>
+
+	<!-- CONTENIDO GRAL -->
+	<div class="wrapper" id="wrapper">
+		<div class="content col-xs-12 column">
+			<div class="tiempo fade-in-top col-sm-12 col-md-12 column">
+				<h2>Te encuentras en</h2>
+				<h1>Av. de las Ciencias</h1>
+				<h2>con temperatura de</h2>
+				<h1 class="grados">18º C</h1>
+			</div>
+
+			<div class="resumen col-sm-12 col-md-12 column">
+				<h3>RESUMEN</h3>
+				<h2>METEOROLÓGICO</h2>
+				<img src="img/down.png" onclick="goIndex()">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
