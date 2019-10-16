@@ -17,45 +17,28 @@
 </head>
 <body id="backImg">
 
-	<div class="bg" id="bg"></div>
+	<nav role="navigation" class="navbar navbar-default barra">
+	  <div class="container" width="100%">
+	        <div class="navbar-header">
+	            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="#" class="navbar-brand">RedCIAQ</a>
+	        </div>
 
-	<!-- VERSION DESK -->
-	<div class="barra between hidden-xs hidden-sm col-md-12">
-		<div class="logo flex">
-			<img src="img/redciaq.png">
-		</div>
-
-		<div class="menu">
-			<ul>
-				<li class="flex"><a>NOSOTROS</a></li>
-				<li class="flex"><a>METEOROLOGÍA</a></li>
-				<li class="flex"><a>TORMENTAS</a></li>
-				<li class="flex"><a>PRENSA</a></li>
-				<li class="flex"><a>HERRAMIENTAS</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- VERSION MOVIL -->
-	<div class="barra between col-xs-12 hidden-md hidden-lg" id="barram">
-		<div class="logo flex">
-			<img src="img/redciaq.png">
-		</div>
-
-		<div class="menu" id="menu">
-			<div class="ham flex">
-				<img src="img/list.png" onclick="goOptions()">
-			</div>
-		</div>
-	</div>
-
-	<ul class="opciones col-xs-12 hidden-md hidden-lg" id="options">
-		<li class="flex"><a>NOSOTROS</a></li>
-		<li class="flex"><a>METEOROLOGÍA</a></li>
-		<li class="flex"><a>TORMENTAS</a></li>
-		<li class="flex"><a>PRENSA</a></li>
-		<li class="flex"><a>HERRAMIENTAS</a></li>
-	</ul>
+	        <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+	            <ul class="nav navbar-nav">
+	                <li class="active"><a href="#">Inicio</a></li>
+	                <li><a href="#">Acerca de</a></li>
+	                <li><a href="#">Blog</a></li>
+	                <li><a href="#">Contacto</a></li>
+	            </ul>
+	        </div>
+	  </div>
+	</nav>
 
 	<!-- CONTENIDO GRAL -->
 	<div class="wrapper" id="wrapper">
@@ -74,5 +57,6 @@
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>
