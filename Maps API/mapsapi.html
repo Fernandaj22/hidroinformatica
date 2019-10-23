@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Maps</title>
+    <title>Maps</title>    
+    <script src="mapas.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC0DnI6zQUdrE_WW4PALAydgFHaKNi_xzI&callback=initMap"
+    defer async></script>
+    <!-- <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script> -->
     
     <style>
         /* Always set the map height explicitly to define the size of the div
         * element that contains the map. */
-        #map {
+        .map {
             height: 50%;
             width: 50%;
         }
-
+        
         .js{
-
+            
             height: 1000px;
             width: 100%;
-
+            
         }
         /* Optional: Makes the sample page fill the window. */
         html, body {
@@ -57,26 +62,22 @@
 </div>
 
 <div class="js">
+    
     <h1>Google Maps API con JS</h1>
     <h4>Los mapas deben estár dentro de un div</h4>
     
     <p>Insertar un mapa a un div utilizando JS</p>
-    <div id="map"></div>
-
-    <script>
-        var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 20.7015388, lng: -100.4424415},
-          zoom: 15 /*https://developers.google.com/maps/documentation/javascript/tutorial#zoom-levels*/
-        });
-      }
-    </script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC0DnI6zQUdrE_WW4PALAydgFHaKNi_xzI&callback=initMap"
-    async defer></script>
-
+    <div id="map" class="map"></div>
+    
+    <p>Insertar un mapa a un div utilizando JS con un PIN</p>
+    <div id="map2" class="map"></div>
+    
+    <p>Insertar un mapa a un div utilizando JS con un cluster de pines</p>
+    <div id="map3" class="map"></div>
+    
+    <p>Más cosas sobre pines</p>
+    <div id="map4" class="map"></div>
     
 </div>
-
 </body>
 </html>
