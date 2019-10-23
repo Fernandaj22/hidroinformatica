@@ -93,6 +93,9 @@ function initMap() {
         draggable: true,
         title: 'Fresko'
     });
+
+    //Estilos personalizados:
+    // https://mapstyle.withgoogle.com/
 }  
 
 initMap();
