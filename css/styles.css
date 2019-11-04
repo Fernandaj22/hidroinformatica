@@ -32,6 +32,7 @@ html, body{
 	justify-content: flex-start;
 	align-items: center;
 	align-content: center;
+	flex-direction: column;
 }
 
 .end{
@@ -69,6 +70,11 @@ html, body{
 	align-items: center;
 	align-content: center;
 	flex-direction: column;
+}
+
+.wrap{
+	display: flex;
+    flex-wrap: wrap;
 }
 
 .nopadding{
@@ -302,16 +308,37 @@ p, h1, h2, h3, h4{
 		padding-right: 5px;
 		box-sizing: border-box;
 	}
-	.content p{
+	.content>p{
 		text-align: center;
 		color: var(--negro);
 		margin-bottom: 0px !important;
 		font-size: 1.4rem;
 		font-weight: 400;
-		padding-left: 5px;
-		padding-right: 5px;
+		padding-left: 8px;
+		padding-right: 8px;
 		box-sizing: border-box;
 	}
+
+	.content>h2{
+		color: var(--verdeoscuro);
+		width: 100%;
+		font-size: 2rem;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 10px;
+		box-sizing: border-box;
+	}
+
+		.justify{
+			text-align: justify !important;
+			color: var(--negro);
+			margin-bottom: 0px !important;
+			font-size: 1.2rem;
+			font-weight: 400;
+			padding-left: 15px;
+			padding-right: 15px;
+			box-sizing: border-box;
+		}
 
 	/*MAPA RESUMEN*/
 	.mapa{
@@ -323,7 +350,7 @@ p, h1, h2, h3, h4{
 	}
 		.mapa div{
 			background: red;
-			height: 100%;
+			height: 100%;r
 		}
 
 	.mapa-estaciones{
@@ -344,25 +371,276 @@ p, h1, h2, h3, h4{
 			border-radius: 10px;
 			background: none !important;
 		}
-	.rev-estacion{
+	.rev-estacion-no{
 		height: 200px;
 		float: left;
-		position: relative;	
-		background: red;	
+		position: relative;		
 		margin: 15px 0;
-		background: var(--gris);
 		border-radius: 5px;
+		background: var(--gris);
 	}
-		.rev-estacion h1{
+		.rev-estacion-no .rev-h1{
 			text-align: center;
 			font-size: 1.8rem;
 			color: rgba(0,0,0,.6);
 			font-weight: 400;
 		}
-		.rev-estacion p{
+		.rev-estacion-no .rev-p{
 			text-align: center;
 			font-size: 1.2rem;
 			color: rgba(0,0,0,.5);
+		}
+
+	.rev-estacion{
+		height: auto;
+		float: left;
+		position: relative;		
+		margin: 15px 0;
+		border-radius: 5px;
+		border: 1px solid rgba(0,0,0,.2);
+		padding: 15px;
+		box-sizing: border-box;
+	}
+			.rev-nombre{
+				width: 100%;
+				height: 30%;
+				float: left;
+				position: relative;
+			}
+				.rev-nombre h1{
+					text-align: center;
+					font-size: 1.8rem;
+					color: rgba(0,0,0,.8);
+					font-weight: 400;
+					margin-bottom: 0px;
+					margin-top: 0px;
+				}
+				.rev-nombre p{
+					text-align: center;
+					font-size: 1.4rem;
+					color: rgba(0,0,0,.6);
+					font-weight: 400;
+					margin-bottom: 10px;	
+				}
+			.rev-cuerpo{
+				width: 100%;
+				height: 70%;
+				float: left;
+				position: relative;
+				padding: 20px 5px 10px 5px;
+				box-sizing: border-box;
+			}
+				.rev-cuerpo div{
+					float: left;
+					position: relative;
+					padding: 5px;
+					box-sizing: border-box;
+				}
+					.imagen{
+						float: left;
+						position: relative;
+						width: 100%;
+						height: 80%;
+					}
+					.concepto{
+						float: left;
+						position: relative;
+						width: 100%;
+						height: 20%;
+						font-weight: 500 !important;
+						font-size: 1.1rem !important;
+					}
+						.rev-cuerpo img{
+							height: 35px;
+							margin-right: 10px !important;
+						}					
+						.rev-cuerpo p{
+							font-size: 1.3rem;
+							font-weight: 300;
+							text-align: center;
+							margin-bottom: 0px !important;
+						}
+
+	/*NOSOTROS
+	PARTICIPANTES*/
+
+	.participantes{
+		height: auto;
+		float: left;
+		position: relative;
+		margin-bottom: 10px;
+	}
+		.participantes h2{
+			font-size: 1.8rem;
+			color: var(--negro);
+		}
+		.participantes .imgs{
+			float: left;
+			position: relative;
+		}
+			.imgs img{
+				height: 60px;
+				margin: 5px 10px;
+			}
+
+		.texto{
+			width: 90%;
+			margin-left: 5%;
+			float: left;
+			position: relative;
+			height: auto;
+		}
+			.texto h3{
+				width: 100%;
+				font-size: 1.6rem;
+
+			}
+			.texto p{
+				text-align: justify;
+				font-size: 1.4rem;
+			}
+
+			.dos-img{
+				float: left;
+				position: relative;
+				padding: 15px;
+				box-sizing: border-box;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+			}
+				.dos-img img{
+					margin: 5px;
+				}
+
+		.miembros{
+			width: 90%;
+			margin-left: 5%;
+			float: left;
+			position: relative;
+			margin-bottom: 10px;
+		}
+			.miembros h2{
+				color: var(--verdeoscuro);
+				width: 100%;
+				font-size: 2rem;
+				margin-bottom: 10px;
+				margin-top: 0px !important;
+			}
+
+			.miembro{
+				height: ;
+				float: left;
+				position: relative;
+				margin-left: 1%;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				border-radius: 10px;
+				overflow: hidden;
+				border: 1px solid rgba(0,0,0,.2);
+				display: block;
+			}
+				.foto{
+					width: 100%;
+					height: 80%;
+					float: left;
+					position: relative;
+					background: url(../img/alex.png);
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+
+				.info{
+					width: 100%;
+					float: left;
+					position: relative;
+					height: 20%;
+					padding: 10px;
+					box-sizing: border-box;
+					display: block;
+				}
+					.info p{
+						width: 100%;
+						float: left;
+						position: relative;
+						margin: 0px !important;
+						text-align: center;
+					}
+						.grado{
+							font-size: 1.2rem;
+							font-weight: 500;
+						}
+						.puesto{
+							font-size: 1rem;
+						}
+						.leer{
+							color: var(--azuloscuro);
+							text-align: center;
+							font-size: 1rem;
+							font-weight: 600;
+							outline: none !important;
+							cursor: pointer;
+						}
+
+				.foto-mini{
+					width: 100%;
+					height: 15%;
+					float: left;
+					position: relative;
+					display: none;
+				}
+					.foto-mini img{
+						width: 20%;
+						height: 100%;
+						float: left;
+						position: relative;
+					}
+					.foto-mini div{
+						width: 80%;
+						height: 100%;
+						float: left;
+						position: relative;
+						background: var(--azulprincipal);
+						padding: 10px;
+						box-sizing: border-box;
+					}
+						.foto-mini p, .foto-mini i{
+							margin-bottom: 0px !important;
+							color: var(--blanco);
+							font-size: 1.2rem;
+						}
+						.foto-mini i{
+							cursor: pointer;
+						}
+				.cv{
+					width: 100%;
+					height: 85%;
+					float: left;
+					position: relative;
+					padding: 10px;
+					box-sizing: border-box;
+					display: none;
+				}
+					.cv p{
+						font-size: 1.2rem;
+						text-align: justify;
+						float: left;
+						position: relative;
+					}
+
+	/*ESTACIONES
+	METEOROLOGIA*/
+	.estaciones{
+		float: left;
+		position: relative;
+		padding-left: 30px;
+		padding-right: 30px;
+		box-sizing: border-box;
+	}
+		.estacion{
+			/*margin-left: 5%;*/
 		}
 
 
@@ -418,9 +696,7 @@ p, h1, h2, h3, h4{
 
 
 
-
 @media (max-width: 768px){
-
 	/*CONTENEDOR GRAL*/
 	/*titulos*/
 		.tiempo h2{
@@ -430,16 +706,55 @@ p, h1, h2, h3, h4{
 			font-size: 3rem;
 		}
 
+	/*TEXTO IMGS*/
+	.texto p{
+		text-align: justify;
+		font-size: 1.3rem;
+	}
+	.dos-img{
+		padding: 10px;
+		flex-direction: column;
+	}
+
+	/*PARTICIPANTES*/
+	.miembro{
+		/*width: 75%;
+		margin-left: 12.5%;*/
+	}
+		.foto{
+			background-size: 100% 100%;
+		}
+
+	/*ESTACIONES*/
+	.estacion{
+		margin-left: 0% !important;
+	}
+
 	/*FOOTER*/
-	footer h2{
-		color: var(--verdeoscuro);
-		font-size: 1.2rem;
-		text-align: center;
+	footer{
+		padding-bottom: 10px;
+		box-sizing: border-box;
 	}
-	footer ul li a, footer ul li{
-		text-align: center;
-	}
-	footer .colab img{
-		height: 40px;
+		footer h2{
+			color: var(--verdeoscuro);
+			font-size: 1.2rem;
+			text-align: center;
+		}
+		footer ul li a, footer ul li{
+			text-align: center !important;
+		}
+		footer .colab img{
+			height: 40px;
+		}
+}
+
+@media (min-width: 768px) and (max-width:768px) {
+    .dos-img{
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-direction: row;
 	}
 }

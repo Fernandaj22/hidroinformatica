@@ -19,12 +19,12 @@
 
 	<div class="barra col-xs-12 nopadding">
 		<div class="logo">
-			<img src="img/redciaq.png">
+			<img src="img/redciaq.png" onclick="irIndex()">
 		</div>
 
 		<div class="menu hidden-xs hidden-sm nopadding">
 			<ul class="end">
-				<li class="flex col-xs-2"><a href="#">NOSOTROS</a></li>
+				<li class="flex col-xs-2"><a href="nosotros.html">NOSOTROS</a></li>
 	            <li class="flex col-xs-2"><a href="#">METEOROLOGÍA</a></li>
 	            <li class="flex col-xs-2"><a href="#">TORMENTAS</a></li>
 	            <li class="flex col-xs-2"><a href="#">PRENSA</a></li>
@@ -55,13 +55,65 @@
 			<div class="mapa col-xs-10 col-xs-offset-1 col-sm-offset-2 col-sm-8 col-md-8 col-lg-8 flex"></div>
 
 			<div class="mapa-estaciones col-xs-12 col-sm-12 col-md-12 col-lg-12 column">
-				<select class="col-xs-12 col-sm-12 col-md-4">
+				<select class="col-xs-12 col-sm-8 col-md-5">
 					<option>Estación #1 - Central de Jurica, Querétaro</option>
 				</select>
 
-				<div class="col-xs-12 col-sm-12 col-md-4 rev-estacion ccenter">
-					<h1>No has seleccionado una estación</h1>
-					<p>Seleccione una estación para visualizar mayor información.</p>
+				<div class="col-xs-12 col-sm-8 col-md-6 rev-estacion-no ccenter">
+					<h1 class="rev-h1">No has seleccionado una estación</h1>
+					<p class="rev-p">Seleccione una estación para visualizar mayor información.</p>
+				</div>
+
+				<div class="col-xs-12 col-sm-8 col-md-6 rev-estacion estacion">
+					<div class="rev-nombre ccenter">
+						<h1>Estación #1</h1>
+						<p>Jurica, Querétaro, Qro.</p>
+					</div>
+
+					<div class="rev-cuerpo">
+						<div class="col-xs-6 col-sm-4 col-md-4">
+							<div class="imagen flex">
+								<img src="img/term.png">
+								<p>15 °C</p>
+							</div>
+							<p class="concepto">Temperatura</p>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-4">
+							<div class="imagen flex">
+								<img src="img/wave.png">
+								<p>200 mm/h</p>
+							</div>
+							<p class="concepto">Intensidad de lluvia</p>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-4">
+							<div class="imagen flex">
+								<img src="img/fog.png">
+								<p>500 mm</p>
+							</div>
+							<p class="concepto">Lluvia acumulada</p>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-4">
+							<div class="imagen flex">
+								<img src="img/drops.png">
+								<p>66.8 %</p>
+							</div>
+							<p class="concepto">Humedad relativa</p>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-4">
+							<div class="imagen flex">
+								<img src="img/wind.png">
+								<p>300 m/s</p>
+							</div>
+							<p class="concepto">Viento</p>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-4">
+							<div class="imagen flex">
+								<img src="img/rain.png">
+								<p>300 w/m</p>
+							</div>
+							<p class="concepto">Radiación solar</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -69,7 +121,7 @@
 				<div class="uno col-xs-12 col-sm-12 col-md-3 col-lg-3">
 					<h2>Mapa del sitio</h2>
 
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 nopadding">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding">
 						<ul>
 							<li><a href="">Nosotros</a></li>
 							<li><a href="">Meteorología</a></li>
@@ -79,7 +131,7 @@
 						</ul>
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 nopadding">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding">
 						<ul>
 							<li><a href="">UAQ</a></li>
 							<li><a href="">Facultad de Ingeniería</a></li>
@@ -120,20 +172,17 @@
 					<h2>Colaboradores</h2>
 
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding">
-						<div class="col-xs-3 col-md-2 colab flex">
+						<div class="col-xs-3 col-md-3 colab flex">
 							<img src="img/redciaq.png">
 						</div>
-						<div class="col-xs-3 col-md-2 colab flex">
+						<div class="col-xs-3 col-md-3 colab flex">
 							<img src="img/info.png">
 						</div>
-						<div class="col-xs-3 col-md-2 colab flex">
-							<img src="img/uaq.png">
+						<div class="col-xs-3 col-md-3 colab flex">
+							<img src="img/uaqb.png">
 						</div>
-						<div class="col-xs-3 col-md-2 colab flex">
+						<div class="col-xs-3 col-md-3 colab flex">
 							<img src="img/ing.png">
-						</div>
-						<div class="col-xs-12 col-md-4 colab flex">
-							<img src="img/prodep.png">
 						</div>
 					</div>
 				</div>
