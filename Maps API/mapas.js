@@ -50,10 +50,233 @@ function initMap() {
         
     ]
     
+    var styledMapType = new google.maps.StyledMapType([
+        {
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#242f3e"
+                }
+            ]
+        },
+        {
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#746855"
+                }
+            ]
+        },
+        {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    "color": "#242f3e"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.locality",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#d59563"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#d59563"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.business",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#263c3f"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#6b9a76"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#38414e"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry.stroke",
+            "stylers": [
+                {
+                    "color": "#212a37"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#9ca5b3"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#746855"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [
+                {
+                    "color": "#1f2835"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#f3d19c"
+                }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#2f3948"
+                }
+            ]
+        },
+        {
+            "featureType": "transit.station",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#d59563"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#17263c"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#515c6d"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    "color": "#17263c"
+                }
+            ]
+        }
+    ], {name: 'Negrito :)'});
+    
+    
     map4 = new google.maps.Map(document.getElementById('map4'), {
         center: ubicacion,
-        zoom: 15 /*https://developers.google.com/maps/documentation/javascript/tutorial#zoom-levels*/
+        zoom: 15, /*https://developers.google.com/maps/documentation/javascript/tutorial#zoom-levels*/
+        mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+            'negrito :)']
+        },
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.LEFT_CENTER
+        },
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: false
     });
+    
+    map4.mapTypes.set('negrito :)', styledMapType);
+    map4.setMapTypeId('negrito :)');
+    
     
     var marker = new google.maps.Marker({
         position: ubicacion,
@@ -80,6 +303,8 @@ function initMap() {
         title: 'UNAM'
     });
     
+    //Estilos personalizados:
+    // https://mapstyle.withgoogle.com/
     //Utilizando iconos de Map Icons
     var marker3 = new google.maps.Marker({
         position: ubicacionFresko,
@@ -93,9 +318,71 @@ function initMap() {
         draggable: true,
         title: 'Fresko'
     });
-
-    //Estilos personalizados:
-    // https://mapstyle.withgoogle.com/
+    
+    var escocia = {lat:56.4730620 , lng:-4.0971417}
+    
+    
+    //Event listener que te mueve a Escocia después de mover el mapa con el mouse
+    // map4.addListener('dragstart', function() {
+    //     alert("No me muevas >:(");
+    //     window.setTimeout(function() {
+    //         map4.panTo(escocia);
+    //     }, 3000);
+    // });
+    
+    //Event Listeners: https://developers.google.com/maps/documentation/javascript/events#ui-events
+    
+    
+    //Infowindows
+    var infowindow = new google.maps.InfoWindow();
+    var informaciondelawindow = document.getElementById('infowindow');
+    
+    marker2.addListener('click', function() {
+        informaciondelawindow.style.display = "inline";
+        infowindow.setContent(informaciondelawindow);
+        infowindow.open(map4, marker2);
+    });
+    
+    marker3.addListener('click', function() {
+        infowindow.setContent("Vamos al Fresko :)");
+        infowindow.open(map4, marker3);
+    });
+    
+    //Polyline
+    var coordenadasPoligono = [
+        
+        ubicacion,
+        ubicacionUNAM,
+        ubicacionFresko
+        
+    ]
+    
+    //Construcción del póligono
+    var poligono = new google.maps.Polygon({
+        paths: coordenadasPoligono,
+        strokeColor: '#FF0000',
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: '#FF0000',
+        fillOpacity: 0.35
+    });
+    poligono.setMap(map4);
+    
+    
+    //Heatmap
+    var HeatMapData = [
+        
+        {location: ubicacionFresko, weight: 1},
+        {location: ubicacion, weight: 0.5},
+        {location: ubicacionUNAM, weight: 2},
+        
+    ];
+    
+    //Esto no funciona :(
+    var heatmap = new google.maps.visualization.HeatmapLayer({
+        data: HeatMapData
+    });
+    heatmap.setMap(map4);
 }  
 
 initMap();
