@@ -12,6 +12,7 @@
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Poppins', sans-serif;
+	text-rendering: optimizeLegibility;
 }
 
 html, body{
@@ -75,6 +76,8 @@ html, body{
 .wrap{
 	display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-box-orient: horizontal;
 }
 
 .nopadding{
@@ -84,6 +87,7 @@ html, body{
 
 p, h1, h2, h3, h4{
 	cursor: default;
+	text-rendering: optimizeLegibility;
 }
 
 .bg{
@@ -479,7 +483,7 @@ p, h1, h2, h3, h4{
 			position: relative;
 		}
 			.imgs img{
-				height: 60px;
+				height: 50px;
 				margin: 5px 10px;
 			}
 
@@ -517,9 +521,10 @@ p, h1, h2, h3, h4{
 		.miembros{
 			width: 90%;
 			margin-left: 5%;
-			float: left;
-			position: relative;
-			margin-bottom: 10px;
+			height: auto;
+    		float: left;
+    		position: relative;
+    		margin-bottom: 10px;
 		}
 			.miembros h2{
 				color: var(--verdeoscuro);
@@ -529,106 +534,58 @@ p, h1, h2, h3, h4{
 				margin-top: 0px !important;
 			}
 
-			.miembro{
-				height: ;
+			.tarjeta{
 				float: left;
 				position: relative;
 				margin-left: 1%;
-				margin-top: 10px;
-				margin-bottom: 10px;
-				border-radius: 10px;
-				overflow: hidden;
-				border: 1px solid rgba(0,0,0,.2);
-				display: block;
+				margin-top: 10px !important;
+				margin-bottom: 15px;
 			}
+				.grado{
+					font-size: 1.5rem;
+					font-weight: 500;
+					text-align: center;
+					margin-bottom: 10px !important;
+				}
+				.puesto{
+					font-size: 1.3rem;
+					text-align: center;
+				}
+				.leer{
+					color: var(--azuloscuro);
+					text-align: center;
+					font-size: 1.2rem;
+					font-weight: 600;
+					cursor: pointer;
+				}
+				/*DIVS*/
 				.foto{
-					width: 100%;
-					height: 80%;
-					float: left;
-					position: relative;
-					background: url(../img/alex.png);
-					background-size: cover;
-					background-repeat: no-repeat;
-					background-position: center;
+					display: block;
 				}
 
 				.info{
-					width: 100%;
-					float: left;
-					position: relative;
-					height: 20%;
-					padding: 10px;
-					box-sizing: border-box;
-					display: block;
-				}
-					.info p{
-						width: 100%;
-						float: left;
-						position: relative;
-						margin: 0px !important;
-						text-align: center;
-					}
-						.grado{
-							font-size: 1.2rem;
-							font-weight: 500;
-						}
-						.puesto{
-							font-size: 1rem;
-						}
-						.leer{
-							color: var(--azuloscuro);
-							text-align: center;
-							font-size: 1rem;
-							font-weight: 600;
-							outline: none !important;
-							cursor: pointer;
-						}
-
-				.foto-mini{
-					width: 100%;
-					height: 15%;
-					float: left;
-					position: relative;
 					display: none;
 				}
-					.foto-mini img{
-						width: 20%;
-						height: 100%;
-						float: left;
-						position: relative;
-					}
-					.foto-mini div{
-						width: 80%;
-						height: 100%;
-						float: left;
-						position: relative;
+					.foto-mini{
 						background: var(--azulprincipal);
-						padding: 10px;
-						box-sizing: border-box;
 					}
 						.foto-mini p, .foto-mini i{
 							margin-bottom: 0px !important;
-							color: var(--blanco);
-							font-size: 1.2rem;
+							color: var(--blanco) !important;
+							font-size: 1.1rem;
+							padding: 5px;
+							box-sizing: border-box;
 						}
 						.foto-mini i{
 							cursor: pointer;
+							margin-right: 5px;
 						}
 				.cv{
-					width: 100%;
-					height: 85%;
-					float: left;
-					position: relative;
 					padding: 10px;
 					box-sizing: border-box;
-					display: none;
+					font-size: 1.2rem !important;
+					text-align: justify;
 				}
-					.cv p{
-						font-size: 1.2rem;
-						text-align: justify;
-						float: left;
-						position: relative;
-					}
 
 	/*ESTACIONES
 	METEOROLOGIA*/
@@ -717,12 +674,18 @@ p, h1, h2, h3, h4{
 	}
 
 	/*PARTICIPANTES*/
-	.miembro{
-		/*width: 75%;
-		margin-left: 12.5%;*/
+	.wrap{
+		justify-content: center !important;
 	}
-		.foto{
-			background-size: 100% 100%;
+	.miembros{
+		display: flex;
+		justify-content: center !important;
+		align-items: center;
+		align-content: center;
+		flex-direction: column;
+	}
+		.tarjeta{
+			/*margin-left: 15%;*/
 		}
 
 	/*ESTACIONES*/
