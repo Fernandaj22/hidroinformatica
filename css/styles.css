@@ -678,11 +678,11 @@ p, h1, h2, h3, h4{
 		justify-content: center !important;
 	}
 	.miembros{
-		display: flex;
+		/*display: flex;
 		justify-content: center !important;
 		align-items: center;
 		align-content: center;
-		flex-direction: column;
+		flex-direction: column;*/
 	}
 		.tarjeta{
 			/*margin-left: 15%;*/
@@ -719,5 +719,12 @@ p, h1, h2, h3, h4{
 		align-items: center;
 		align-content: center;
 		flex-direction: row;
+	}
+
+	.wrap{
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    -ms-box-orient: horizontal;
 	}
 }
