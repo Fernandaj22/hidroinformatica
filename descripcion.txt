@@ -1,0 +1,49 @@
+
+
+
+               
+  
+				
+
+
+					Colaboradora en el área administrativa de Red CIAQ apoya en convenios de colaboración con instituciones públicas y privadas, organizadora de eventos de la Red es Miembro activo de los Jóvenes Profesionales del Agua, lleva a cabo actividades relacionadas con el agua y la sociedad.
+				
+
+					Coordinador Operativo de RedCIAQ, es responsable del funcionamiento de las estaciones meteorológicas e hidrométricas. También se encarga del centro de datos meteorológicos y de desarrollar aplicaciones hidroinformáticas. Tiene colaboraciones en proyectos de investigación tanto para el sector público como privado y cuenta con participación en eventos académicos y relacionados al tema del agua a nivel nacional e internacional. Cuenta con amplia experiencia como instructor de varios tópicos del área de la computación.
+				
+Ingeniero de Software, Facultad de Informática de la UAQ. Colabore realizando funciones de Desarrollo de Software en la Red bajo supervisión del M.I.S.D. Carlos Alberto Olmos Trejo y el M.C. Israel Ruiz, las cuales se dividieron en etapas: Levantar un Servidor, Creación de Máquinas Virtuales, Respaldo de Imágenes Satelitales, Conversión de Imágenes satelitales en formato (.pcx ) a formato (.tiff), Migración de aplicaciones de las tecnologías Matlab, Rubi, Phyton a Php, Programación de algoritmos en Php. Teniendo como resultado un servidor web que da acceso a una aplicación, la cual permite consultar los datos históricos de las EMAS de la RED. Y un formulario web que genera una Ficha Histórica Registro de Incidencias del Clima (http://www.redciaq.uaq.mx/system/ficha ).
+                
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.  
+Estudiante de Ingeniería de Software en la UAQ, Facultad de Inform·tica, practicante en Centro de Desarrollo, contribuyente en el programa Red-CIAQ con la programacion de los diferentes tipos de interpolacion, y al mismo tiempo trabaja con creacion y rediseño de base de datos.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.  
+Ingeniero en Mecatrónica con Especialidad en Mecatrónica, por UPIITA Instituto Politécnico Nacional ;con Maestría en Ciencias en Recursos Hídricos y Ambiental por la UAQ y Candidato a Doctor en Ingeniería por la misma Universidad faltando únicamente el examen de grado. Coordinador Científico de la RedCIAQ, Profesor-Investigador por honorarios en la División de Investigación y Posgrado de la Facultad de Ingeniería de la UAQ y profesor de tiempo completo en la Universidad Anáhuac de Querétaro.
+                
+Estudiante de Ingeniería de Software de la UAQ. Ha trabajado en proyectos de desarrollo de Software y concursos CONACYT. Actualmente trabaja en un proyecto que se pretende aplicar para el desarrollo de una nueva herramienta hidroinformática de la RedCIAQ para el análisis de precipitaciones.
+Jefe de la División de Investigación y Posgrado de la facultad de Ingeniería de la UAQ.  
+Licenciado en Informática por la Universidad Autónoma de Querétaro. Actual coordinador de la Ingeniería en Software y del Centro de Desarrollo de la Facultad de Informática, imparte materias de Programación y Redes. Le apasiona la Seguridad Informática y el Hackeo Ético.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.  
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.  
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.  
+Universidad de Colima Estudiante de Trabajo Social Séptimo Semestre Colaboradora Externa 
+Universidad Michoacana de San Nicolás de Hidalgo Estudiante de Ingeniería Civil Quinto Semestre. 
+Universidad de Occidente Campus Los Mochis Estudiante en Ingeniería ambiental Séptimo Trimestre Colaboradora Externa.
+Universidad Autónoma de Baja California Quinto Semestre Colaboradora Externa.
+Universidad Michoacana de San Nicolás de Hidalgo Estudiante en Ingeniería civil. Quinto Semestre Colaboradora Externa.
+Universidad de Sonora Estudiante de la Licenciatura en Ingeniería Industrial y de Sistemas Noveno Semestre Colaboradora Externa.
+Universidad de Colima Estudiante en Ingeniería Civil Séptimo Semestre Colaboradora Externo.
+Universidad Michoacana de San Nicolás de Hidalgo Estudiante de Ingeniería Civil Sexto Semestre Colaboradora Externo.

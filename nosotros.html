@@ -106,14 +106,15 @@
 				<h2>Participantes</h2>
 
 				<div class="wrap">
-					<div class="card tarjeta" style="width: 20rem;">
+					<!-- Alex -->
+					<div class="card 3" style="width: 20rem;" id="alex">
 						<!-- FOTO -->
 						<div class="foto">
 							<img class="card-img-top" src="img/alex.png">
 							<div class="card-body">
 						    	<h5 class="card-title grado">M.S.I. José Alejandro Vargas Díaz</h5>
 						    	<p class="card-text puesto">Coordinador del Centro de Desarrollo, UAQ</p>
-						    	<p class="card-text leer" onclick="more()">Leer más</p>
+						    	<p class="card-text leer" onclick="more('alex')">Leer más</p>
 						  	</div>
 					  	</div>
 					  	<!-- CV -->
@@ -121,39 +122,164 @@
 							<div class="flex foto-mini">
 								<img class="card-img-top" src="img/mini-alex.png">
 								<p class="">M.S.I. José Alejandro Vargas Díaz</p>
-								<i class="fas fa-angle-down" onclick="less()"></i>
+								<i class="fas fa-angle-down" onclick="less('alex')"></i>
 							</div>
-					    	<p class="card-text cv">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					    	cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+					    	<p class="card-text cv">Licenciado en Informática por la Universidad Autónoma de Querétaro. Actual coordinador de la Ingeniería en Software y del Centro de Desarrollo de la Facultad de Informática, imparte materias de Programación y Redes. Le apasiona la Seguridad Informática y el Hackeo Ético.</p>
 					  	</div>
 					</div>
 
-					<div class="card tarjeta" style="width: 20rem;">
+					<!-- Diego -->
+					<div class="card tarjeta" style="width: 20rem;" id="diego">
 						<!-- FOTO -->
 						<div class="foto">
 							<img class="card-img-top" src="img/diego.png">
 							<div class="card-body">
-						    	<h5 class="card-title grado">M.S.I. José Alejandro Vargas Díaz</h5>
-						    	<p class="card-text puesto">Coordinador del Centro de Desarrollo, UAQ</p>
-						    	<p class="card-text leer" onclick="more()">Leer más</p>
+						    	<h5 class="card-title grado">M.S.I. Diego Octavio Ibarra Corona</h5>
+						    	<p class="card-text puesto">Lorem, ipsum.</p>
+						    	<p class="card-text leer" onclick="more('diego')">Leer más</p>
 						  	</div>
 					  	</div>
 					  	<!-- CV -->
 					  	<div class="card-body info">
 							<div class="flex foto-mini">
-								<img class="card-img-top" src="img/mini-alex.png">
+								<img class="card-img-top" src="img/mini-diego.png">
 								<p class="">M.S.I. Diego Octavio Ibarra Corona</p>
-								<i class="fas fa-angle-down" onclick="less()"></i>
+								<i class="fas fa-angle-down" onclick="less('diego')"></i>
 							</div>
-					    	<p class="card-text cv">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					    	cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+					    	<p class="card-text cv">Ingeniero en Software por la Facultad de Informática de la UAQ. Desarrollador de Software del Centro de Desarrollo y docente en asignaturas de Programación y Redes en dicha institución. Se especializa en Bases de Datos Relacionales y el lenguaje de programación PHP. Actual estudiante de la Maestría en Sistemas de Información: Gestión y Tecnología.</p>
 					  	</div>
+					</div>
+
+					<!-- Caracheo -->
+					<div class="card tarjeta" style="width: 20rem;" id="caracheo">
+						<!-- FOTO -->
+						<div class="foto">
+							<img class="card-img-top" src="img/caracheo.png">
+							<div class="card-body">
+						    	<h5 class="card-title grado">M.S.I. Eduardo Aguirre Caracheo</h5>
+						    	<p class="card-text puesto">Lorem, ipsum.</p>
+						    	<p class="card-text leer" onclick="more('caracheo')">Leer más</p>
+						  	</div>
+					  	</div>
+					  	<!-- CV -->
+					  	<div class="card-body info">
+							<div class="flex foto-mini">
+								<img class="card-img-top" src="img/mini-caracheo.png">
+								<p class="">M.S.I. Eduardo Aguirre Caracheo</p>
+								<i class="fas fa-angle-down" onclick="less('caracheo')"></i>
+							</div>
+					    	<p class="card-text cv">Maestro en Sistemas de Información por la Facultad de Informática de la Universidad Autónoma de Querétaro. Imparte materias de Desarrollo Web. Diseñó e implementó el nuevo diseño de la página de RedCIAQ. Actualmente trabaja en el Centro de Desarrollo de la Facultad de Informática, donde realiza diseño e implementación de páginas web. </p>
+					  	</div>
+					</div>
+
+					<!-- JP -->
+					<div class="card tarjeta" style="width: 20rem;" id="jp">
+						<!-- FOTO -->
+						<div class="foto">
+							<img class="card-img-top" src="img/jp.png">
+							<div class="card-body">
+						    	<h5 class="card-title grado">Juan Pablo Gutierrez Oliva</h5>
+						    	<p class="card-text puesto">Lorem, ipsum.</p>
+						    	<p class="card-text leer" onclick="more('jp')">Leer más</p>
+						  	</div>
+					  	</div>
+					  	<!-- CV -->
+					  	<div class="card-body info">
+							<div class="flex foto-mini">
+								<img class="card-img-top" src="img/mini-jp.png">
+								<p class="">Juan Pablo Gutierrez Oliva</p>
+								<i class="fas fa-angle-down" onclick="less('jp')"></i>
+							</div>
+					    	<p class="card-text cv">Estudiante de la carrera en Ingeniería en Software en la Facultad de Informática de la UAQ. Actualmente practicante en el departamento de Centro de Desarrollo. Desarrollador de herramientas para el sistema web de RedCIAQ.<p>
+					  	</div>
+					</div>
+
+					<!-- Liz -->
+					<div class="card tarjeta" style="width: 20rem;" id="liz">
+						<!-- FOTO -->
+						<div class="foto">
+							<img class="card-img-top" src="img/liz.png">
+							<div class="card-body">
+						    	<h5 class="card-title grado">Y. Lisset Medel San Elías</h5>
+						    	<p class="card-text puesto">Lorem, ipsum.</p>
+						    	<p class="card-text leer" onclick="more('liz')">Leer más</p>
+						  	</div>
+					  	</div>
+					  	<!-- CV -->
+					  	<div class="card-body info">
+							<div class="flex foto-mini">
+								<img class="card-img-top" src="img/mini-liz.png">
+								<p class="">Y. Lisset Medel San Elías</p>
+								<i class="fas fa-angle-down" onclick="less('liz')"></i>
+							</div>
+					    	<p class="card-text cv">Estudiante de segundo semestre de Ingeniería en Software de la UAQ. Colaboradora en distintos proyectos en el Centro de Desarrollo en el área de Diseño y Desarrollo de Interfaces de software web. En el proyecto de RedCIAQ participó en el rediseño y construcción del sitio web y la estructura para la actualización de los nuevos sistemas.<p>
+					  	</div>
+					</div>
+
+					<!-- Olmos -->
+					<div class="card tarjeta" style="width: 20rem;" id="olmos">
+							<!-- FOTO -->
+							<div class="foto">
+								<img class="card-img-top" src="img/olmos.png">
+								<div class="card-body">
+									<h5 class="card-title grado">Carlos Alberto Olmos Trejo</h5>
+									<p class="card-text puesto">Lorem, ipsum.</p>
+									<p class="card-text leer" onclick="more('olmos')">Leer más</p>
+								  </div>
+							  </div>
+							  <!-- CV -->
+							  <div class="card-body info">
+								<div class="flex foto-mini">
+									<img class="card-img-top" src="img/mini-olmos.png">
+									<p class="">Carlos Alberto Olmos Trejo</p>
+									<i class="fas fa-angle-down" onclick="less('olmos')"></i>
+								</div>
+								<p class="card-text cv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laborum. Voluptatum accusantium doloribus exercitationem, vel maiores corporis accusamus repudiandae reprehenderit.<p>
+							  </div>
+					</div>
+
+					<!-- Raúl -->
+					<div class="card tarjeta" style="width: 20rem;" id="raul">
+							<!-- FOTO -->
+							<div class="foto">
+								<img class="card-img-top" src="img/raul.png">
+								<div class="card-body">
+									<h5 class="card-title grado">Raúl Guzmán Guerrero</h5>
+									<p class="card-text puesto">Lorem, ipsum.</p>
+									<p class="card-text leer" onclick="more('raul')">Leer más</p>
+								  </div>
+							  </div>
+							  <!-- CV -->
+							  <div class="card-body info">
+								<div class="flex foto-mini">
+									<img class="card-img-top" src="img/mini-raul.png">
+									<p class="">Raúl Guzmán Guerrero</p>
+									<i class="fas fa-angle-down" onclick="less('raul')"></i>
+								</div>
+								<p class="card-text cv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laborum. Voluptatum accusantium doloribus exercitationem, vel maiores corporis accusamus repudiandae reprehenderit.<p>
+							  </div>
+					</div>
+
+					<!-- Fer -->
+					<div class="card tarjeta" style="width: 20rem;" id="fer">
+							<!-- FOTO -->
+							<div class="foto">
+								<img class="card-img-top" src="img/fer.png">
+								<div class="card-body">
+									<h5 class="card-title grado">Fernanda Juárez</h5>
+									<p class="card-text puesto">Lorem, ipsum.</p>
+									<p class="card-text leer" onclick="more('fer')">Leer más</p>
+								  </div>
+							  </div>
+							  <!-- CV -->
+							  <div class="card-body info">
+								<div class="flex foto-mini">
+									<img class="card-img-top" src="img/mini-fer.png">
+									<p class="">Fernanda Juárez</p>
+									<i class="fas fa-angle-down" onclick="less('fer')"></i>
+								</div>
+								<p class="card-text cv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laborum. Voluptatum accusantium doloribus exercitationem, vel maiores corporis accusamus repudiandae reprehenderit.<p>
+							  </div>
 					</div>
 				</div>
 			</div>
