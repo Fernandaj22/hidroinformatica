@@ -6,6 +6,7 @@
   --blanco: #FCFEFF;
   --negro: #080808;
   --gris: #EAEAEA;
+  --rojo: #F15642;
 }
 
 *{
@@ -76,7 +77,7 @@ html, body{
 .wrap{
 	display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     -ms-box-orient: horizontal;
 }
 
@@ -326,7 +327,7 @@ p, h1, h2, h3, h4{
 	.content>h2{
 		color: var(--verdeoscuro);
 		width: 100%;
-		font-size: 2rem;
+		font-size: 2.2rem;
 		padding-left: 30px;
 		padding-right: 30px;
 		padding-top: 10px;
@@ -337,8 +338,7 @@ p, h1, h2, h3, h4{
 			text-align: justify !important;
 			color: var(--negro);
 			margin-bottom: 0px !important;
-			font-size: 1.2rem;
-			font-weight: 400;
+			font-size: 1.4rem;
 			padding-left: 15px;
 			padding-right: 15px;
 			box-sizing: border-box;
@@ -488,8 +488,10 @@ p, h1, h2, h3, h4{
 			}
 
 		.texto{
-			width: 90%;
-			margin-left: 5%;
+			width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
+			box-sizing: border-box;
 			float: left;
 			position: relative;
 			height: auto;
@@ -502,6 +504,7 @@ p, h1, h2, h3, h4{
 			.texto p{
 				text-align: justify;
 				font-size: 1.4rem;
+				color: var(--negro);
 			}
 
 			.dos-img{
@@ -519,8 +522,10 @@ p, h1, h2, h3, h4{
 				}
 
 		.miembros{
-			width: 90%;
-			margin-left: 5%;
+			width: 100%;
+			padding-right: 30px;
+			padding-left: 30px;
+			box-sizing: border-box;
 			height: auto;
     		float: left;
     		position: relative;
@@ -537,7 +542,7 @@ p, h1, h2, h3, h4{
 			.tarjeta{
 				float: left;
 				position: relative;
-				margin-left: 1%;
+				margin-left: 1% !important;
 				margin-top: 10px !important;
 				margin-bottom: 15px;
 			}
@@ -600,13 +605,130 @@ p, h1, h2, h3, h4{
 			/*margin-left: 5%;*/
 		}
 
+	/*TORMENTAS*/
+	details{
+		height: auto;
+    	float: left;
+    	position: relative;
+    	margin: 10px 0;
+    	padding-right: 15px !important;
+    	padding-left: 15px !important;
+    	box-sizing: border-box;
+	}
+		summary{
+			list-style: none;
+			padding-left: 15px;
+			padding-right: 15px;
+			box-sizing: border-box;
+			outline: none;
+		}
+			summary p{
+				border-bottom: 1px solid rgba(0,0,0,.2);
+				font-weight: 500;
+				font-size: 1.6rem;
+				cursor: pointer;
+			}
+			details>summary::-webkit-details-marker{
+				float: right !important;
+				margin-top: 5px;
+				cursor: pointer;
+			}
+
+		details .archivo{
+			margin: 15px 27px;
+			float: left;
+			position: relative;
+			box-sizing: border-box;
+			border-radius: 5px;
+			padding: 10px;
+			box-sizing: border-box;
+			border: 1px solid rgba(0,0,0,.2);
+			cursor: pointer;
+			/*box-shadow: inset 0 0 -2px 0 rgba(0,0,0,.2);*/
+		}
+			details .archivo img{
+				height: 50px;
+			}
+			details .archivo p{
+				width: 100%;
+				font-size: 1.1rem;
+				float: left;
+				position: relative;
+				margin-top: 10px;
+				margin-bottom: 0px !important;
+				font-weight: 500;
+				text-align: center !important;
+				cursor: pointer !important;
+			}
+			details .archivo:hover{
+				border: 1px solid var(--rojo);
+				/*box-shadow: inset 0 0 15px 0 var(--rojo);*/
+			}
+
+	/*PRENSA
+	NOTICIAS*/
+	.noticia{
+		width: 95%;
+		/*height: 250px;*/
+		height: auto;
+		float: left;
+		position: relative;
+		/*border: 1px solid rgba(0,0,0,.2);*/
+		margin: 10px 0px;
+		margin-left: 2.5% !important;
+	}
+		.noticia div{
+			height: 100%;
+		}
+			.noticia div iframe{
+				width: 100%;
+				min-height: 240px;
+				display: table-cell;
+			}
+
+		.texto-noticia{
+			padding: 20px 15px !important;
+			box-sizing: border-box;
+			/*border: 1px solid rgb	a(0,0,0,.2);*/
+		}
+			.texto-noticia h2{
+				font-size: 1.6rem;
+				height: auto;
+				margin-top: 5px !important;
+				text-align: justify;
+			}
+			.texto-noticia p{
+				text-align: justify;
+				font-size: 1.3rem;
+				margin-bottom: 0px !important;
+			}
+			.texto-noticia b{
+				color: var(--azuloscuro);
+				margin-top: 20px !important;
+			}
+			.texto-noticia a{
+				color: var(--negro);
+			}
+				.texto-noticia a:hover{
+					color: var(--azuloscuro);
+					text-decoration: none;
+				}
+
+	/*HERRAMIENTAS*/
+	.herramientas{
+		float: left;
+		position: relative;
+		height: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
 
 	/*FOOTER*/
 	footer{
 		height: auto;
 		background: var(--azulprincipal);
-		float: left;
-		position: relative;
 		padding-bottom: 10px;
 		box-sizing: border-box;
 	}
@@ -653,7 +775,7 @@ p, h1, h2, h3, h4{
 
 
 
-@media (max-width: 768px){
+@media (max-width: 991px){
 	/*CONTENEDOR GRAL*/
 	/*titulos*/
 		.tiempo h2{
@@ -677,21 +799,36 @@ p, h1, h2, h3, h4{
 	.wrap{
 		justify-content: center !important;
 	}
-	.miembros{
-		/*display: flex;
-		justify-content: center !important;
-		align-items: center;
-		align-content: center;
-		flex-direction: column;*/
+	/*.miembros{
+		display: flex;
 	}
 		.tarjeta{
-			/*margin-left: 15%;*/
-		}
+			margin-left: 15%;
+		}*/
 
-	/*ESTACIONES*/
+	/*ESTACIONES
 	.estacion{
 		margin-left: 0% !important;
+	}*/
+
+	/*TORMENTAS*/
+	details .archivo img{
+		height: 40px;
 	}
+
+	/*PRENSA
+	NOTICIAS*/
+	.noticia{
+		width: 90%;
+		height: auto !important;
+		margin-left: 5% !important;
+	}
+		.texto-noticia{
+			padding: 15px !important;
+		}
+			.texto-noticia h2{
+				margin-top: 5px !important;
+			}
 
 	/*FOOTER*/
 	footer{
@@ -701,13 +838,14 @@ p, h1, h2, h3, h4{
 		footer h2{
 			color: var(--verdeoscuro);
 			font-size: 1.2rem;
-			text-align: center;
+			text-align: center !important;
 		}
 		footer ul li a, footer ul li{
 			text-align: center !important;
 		}
 		footer .colab img{
 			height: 40px;
+			margin-bottom: 10px;
 		}
 }
 
@@ -724,7 +862,15 @@ p, h1, h2, h3, h4{
 	.wrap{
 		display: flex;
 	    flex-wrap: wrap;
-	    justify-content: space-between;
+	    justify-content: space-around;
 	    -ms-box-orient: horizontal;
+	}
+
+	.archivo{
+		width: 12% !important;
+	}
+
+	details .archivo p{
+		font-size: 1rem;
 	}
 }
