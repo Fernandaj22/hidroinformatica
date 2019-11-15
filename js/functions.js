@@ -7,18 +7,19 @@ function goIndex(){
 	location.href = "resumen.html";
 }
 
-function more(){
-	foto = document.querySelector(".foto");
-	info = document.querySelector(".info");
-
+function more(nombre){	
+	
+	foto = document.querySelector("div#"+nombre+" .foto");
+	info = document.querySelector("div#"+nombre+" .info");
+	
 	foto.style.display="none";
 	info.style.display="block";
 }
 
-function less(){
-	foto = document.querySelector(".foto");
-	info = document.querySelector(".info");
-
+function less(nombre){
+	foto = document.querySelector("div#" +nombre+ " .foto");
+	info = document.querySelector("div#" +nombre+ " .info");
+	
 	foto.style.display="block";
 	info.style.display="none";
 }
