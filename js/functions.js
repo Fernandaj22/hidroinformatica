@@ -3,12 +3,7 @@ function goOptions(){
 	options.classList.toggle("ver")
 }
 
-function goIndex(){
-	location.href = "resumen.html";
-}
-
 function more(nombre){	
-	
 	foto = document.querySelector("div#"+nombre+" .foto");
 	info = document.querySelector("div#"+nombre+" .info");
 	

@@ -19,16 +19,16 @@
 
 	<div class="barra col-xs-12 nopadding">
 		<div class="logo">
-			<img src="img/redciaq.png">
+			<img src="img/redciaq.png" onclick="navegar('barra');">
 		</div>
 
 		<div class="menu hidden-xs hidden-sm nopadding">
 			<ul class="end">
-				<li class="flex col-xs-2"><a href="nosotros.html">NOSOTROS</a></li>
+				<li class="flex col-xs-2 actual"><a href="nosotros.html">NOSOTROS</a></li>
 	            <li class="flex col-xs-2"><a href="meteorologia.html">METEOROLOGÍA</a></li>
-	            <li class="flex col-xs-2"><a href="#">TORMENTAS</a></li>
-	            <li class="flex col-xs-2"><a href="#">PRENSA</a></li>
-	            <li class="flex col-xs-2"><a href="#">HERRAMIENTAS</a></li>
+	            <li class="flex col-xs-2"><a href="tormentas.html">TORMENTAS</a></li>
+	            <li class="flex col-xs-2"><a href="prensa.html">PRENSA</a></li>
+	            <li class="flex col-xs-2"><a href="herramientas.html">HERRAMIENTAS</a></li>
 			</ul>
 		</div>
 
@@ -38,11 +38,11 @@
 
 		<div class="menu-m hidden-md hidden-lg nopadding" id="options">
 			<ul class="vertical">
-				<li class="flex col-xs-12 bt"><a href="#">NOSOTROS</a></li>
+				<li class="flex col-xs-12 bt"><a href="nosotros.html">NOSOTROS</a></li>
 	            <li class="flex col-xs-12"><a href="meteorologia.html">METEOROLOGÍA</a></li>
-	            <li class="flex col-xs-12"><a href="#">TORMENTAS</a></li>
-	            <li class="flex col-xs-12"><a href="#">PRENSA</a></li>
-	            <li class="flex col-xs-12 bb"><a href="#">HERRAMIENTAS</a></li>
+	            <li class="flex col-xs-12"><a href="tormentas.html">TORMENTAS</a></li>
+	            <li class="flex col-xs-12"><a href="prensa.html">PRENSA</a></li>
+	            <li class="flex col-xs-12 bb"><a href="herramientas.html">HERRAMIENTAS</a></li>
 			</ul>
 		</div>
 	</div>
@@ -101,7 +101,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 miembros">
 				<h2>Participantes</h2>
 
-				<div class="wrap">
+				<div class="wrap ws">
 					<!-- Alex -->
 					<div class="card tarjeta" style="width: 20rem;" id="alex">
 						<!-- FOTO -->
@@ -145,138 +145,6 @@
 					    	<p class="card-text cv">Ingeniero en Software por la Facultad de Informática de la UAQ. Desarrollador de Software del Centro de Desarrollo y docente en asignaturas de Programación y Redes en dicha institución. Se especializa en Bases de Datos Relacionales y el lenguaje de programación PHP. Actual estudiante de la Maestría en Sistemas de Información: Gestión y Tecnología.</p>
 					  	</div>
 					</div>
-
-					<!-- Caracheo -->
-					<div class="card tarjeta" style="width: 20rem;" id="caracheo">
-						<!-- FOTO -->
-						<div class="foto">
-							<img class="card-img-top" src="img/caracheo.png">
-							<div class="card-body">
-						    	<h5 class="card-title grado">M.S.I. Eduardo Aguirre Caracheo</h5>
-						    	<p class="card-text puesto">Lorem, ipsum.</p>
-						    	<p class="card-text leer" onclick="more('caracheo')">Leer más</p>
-						  	</div>
-					  	</div>
-					  	<!-- CV -->
-					  	<div class="card-body info">
-							<div class="flex foto-mini">
-								<img class="card-img-top" src="img/mini-caracheo.png">
-								<p class="">M.S.I. Eduardo Aguirre Caracheo</p>
-								<i class="fas fa-angle-down" onclick="less('caracheo')"></i>
-							</div>
-					    	<p class="card-text cv">Maestro en Sistemas de Información por la Facultad de Informática de la Universidad Autónoma de Querétaro. Imparte materias de Desarrollo Web. Diseñó e implementó el nuevo diseño de la página de RedCIAQ. Actualmente trabaja en el Centro de Desarrollo de la Facultad de Informática, donde realiza diseño e implementación de páginas web. </p>
-					  	</div>
-					</div>
-
-					<!-- JP -->
-					<div class="card tarjeta" style="width: 20rem;" id="jp">
-						<!-- FOTO -->
-						<div class="foto">
-							<img class="card-img-top" src="img/jp.png">
-							<div class="card-body">
-						    	<h5 class="card-title grado">Juan Pablo Gutierrez Oliva</h5>
-						    	<p class="card-text puesto">Lorem, ipsum.</p>
-						    	<p class="card-text leer" onclick="more('jp')">Leer más</p>
-						  	</div>
-					  	</div>
-					  	<!-- CV -->
-					  	<div class="card-body info">
-							<div class="flex foto-mini">
-								<img class="card-img-top" src="img/mini-jp.png">
-								<p class="">Juan Pablo Gutierrez Oliva</p>
-								<i class="fas fa-angle-down" onclick="less('jp')"></i>
-							</div>
-					    	<p class="card-text cv">Estudiante de la carrera en Ingeniería en Software en la Facultad de Informática de la UAQ. Actualmente practicante en el departamento de Centro de Desarrollo. Desarrollador de herramientas para el sistema web de RedCIAQ.<p>
-					  	</div>
-					</div>
-
-					<!-- Liz -->
-					<div class="card tarjeta" style="width: 20rem;" id="liz">
-						<!-- FOTO -->
-						<div class="foto">
-							<img class="card-img-top" src="img/liz.png">
-							<div class="card-body">
-						    	<h5 class="card-title grado">Y. Lisset Medel San Elías</h5>
-						    	<p class="card-text puesto">Lorem, ipsum.</p>
-						    	<p class="card-text leer" onclick="more('liz')">Leer más</p>
-						  	</div>
-					  	</div>
-					  	<!-- CV -->
-					  	<div class="card-body info">
-							<div class="flex foto-mini">
-								<img class="card-img-top" src="img/mini-liz.png">
-								<p class="">Y. Lisset Medel San Elías</p>
-								<i class="fas fa-angle-down" onclick="less('liz')"></i>
-							</div>
-					    	<p class="card-text cv">Estudiante de segundo semestre de Ingeniería en Software de la UAQ. Colaboradora en distintos proyectos en el Centro de Desarrollo en el área de Diseño y Desarrollo de Interfaces de software web. En el proyecto de RedCIAQ participó en el rediseño y construcción del sitio web y la estructura para la actualización de los nuevos sistemas.<p>
-					  	</div>
-					</div>
-
-					<!-- Olmos -->
-					<div class="card tarjeta" style="width: 20rem;" id="olmos">
-							<!-- FOTO -->
-							<div class="foto">
-								<img class="card-img-top" src="img/olmos.png">
-								<div class="card-body">
-									<h5 class="card-title grado">Carlos Alberto Olmos Trejo</h5>
-									<p class="card-text puesto">Lorem, ipsum.</p>
-									<p class="card-text leer" onclick="more('olmos')">Leer más</p>
-								  </div>
-							  </div>
-							  <!-- CV -->
-							  <div class="card-body info">
-								<div class="flex foto-mini">
-									<img class="card-img-top" src="img/mini-olmos.png">
-									<p class="">Carlos Alberto Olmos Trejo</p>
-									<i class="fas fa-angle-down" onclick="less('olmos')"></i>
-								</div>
-								<p class="card-text cv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laborum. Voluptatum accusantium doloribus exercitationem, vel maiores corporis accusamus repudiandae reprehenderit.<p>
-							  </div>
-					</div>
-
-					<!-- Raúl -->
-					<div class="card tarjeta" style="width: 20rem;" id="raul">
-							<!-- FOTO -->
-							<div class="foto">
-								<img class="card-img-top" src="img/raul.png">
-								<div class="card-body">
-									<h5 class="card-title grado">Raúl Guzmán Guerrero</h5>
-									<p class="card-text puesto">Lorem, ipsum.</p>
-									<p class="card-text leer" onclick="more('raul')">Leer más</p>
-								  </div>
-							  </div>
-							  <!-- CV -->
-							  <div class="card-body info">
-								<div class="flex foto-mini">
-									<img class="card-img-top" src="img/mini-raul.png">
-									<p class="">Raúl Guzmán Guerrero</p>
-									<i class="fas fa-angle-down" onclick="less('raul')"></i>
-								</div>
-								<p class="card-text cv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laborum. Voluptatum accusantium doloribus exercitationem, vel maiores corporis accusamus repudiandae reprehenderit.<p>
-							  </div>
-					</div>
-
-					<!-- Fer -->
-					<div class="card tarjeta" style="width: 20rem;" id="fer">
-							<!-- FOTO -->
-							<div class="foto">
-								<img class="card-img-top" src="img/fer.png">
-								<div class="card-body">
-									<h5 class="card-title grado">Fernanda Juárez</h5>
-									<p class="card-text puesto">Lorem, ipsum.</p>
-									<p class="card-text leer" onclick="more('fer')">Leer más</p>
-								  </div>
-							  </div>
-							  <!-- CV -->
-							  <div class="card-body info">
-								<div class="flex foto-mini">
-									<img class="card-img-top" src="img/mini-fer.png">
-									<p class="">Fernanda Juárez</p>
-									<i class="fas fa-angle-down" onclick="less('fer')"></i>
-								</div>
-								<p class="card-text cv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laborum. Voluptatum accusantium doloribus exercitationem, vel maiores corporis accusamus repudiandae reprehenderit.<p>
-							  </div>
-					</div>
 				</div>
 			</div>
 
@@ -288,21 +156,21 @@
 						<ul>
 							<li><a href="nosotros.html">Nosotros</a></li>
 							<li><a href="meteorologia.html">Meteorología</a></li>
-							<li><a href="#">Tormentas</a></li>
-							<li><a href="#">Prensa</a></li>
-							<li><a href="#">Herramientas</a></li>
+							<li><a href="tormentas.html">Tormentas</a></li>
+							<li><a href="prensa.html">Prensa</a></li>
+							<li><a href="herramientas.html">Herramientas</a></li>
 						</ul>
 					</div>
 
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding">
 						<ul>
-							<li><a href="https://www.uaq.mx/">UAQ</a></li>
-							<li><a href="https://ingenieria.uaq.mx/">Facultad de Ingeniería</a></li>
-							<li><a href="https://www.uaq.mx/informatica/">Facultad de Informática</a></li>
-							<li><a href="https://planeacion.uaq.mx/index.php/unidades/unidad-de-gestion-institucional/subunidad-academica/prodep">PRODEP</a></li>
-							<li><a href="#">Iniciar sesión</a></li>
+							<li><a href="https://www.uaq.mx/" target="__BLANK">UAQ</a></li>
+							<li><a href="https://ingenieria.uaq.mx/" target="__BLANK">Facultad de Ingeniería</a></li>
+							<li><a href="https://www.uaq.mx/informatica/" target="__BLANK">Facultad de Informática</a></li>
+							<li><a href="https://planeacion.uaq.mx/index.php/unidades/unidad-de-gestion-institucional/subunidad-academica/prodep" target="__BLANK">PRODEP</a></li>
+							<li><a href="inicio.html">Iniciar sesión</a></li>
 						</ul>
-					</div>	
+					</div>
 				</div>
 
 				<div class="uno col-xs-12 col-sm-12 col-md-3 col-lg-3">
@@ -324,9 +192,9 @@
 
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding">
 						<ul>
-							<li><a href="https://www.facebook.com/redciaq"><img src="img/fb.png">Facebook</a></li>
-							<li><a href="https://twitter.com/redciaq"><img src="img/tw.png">Twitter</a></li>
-							<li><a href="https://www.youtube.com/channel/UCADNpr1uDielhiXgrBPegBQ"><img src="img/yt.png">Youtube</a></li>
+							<li><a href="https://www.facebook.com/redciaq" target="__BLANK"><img src="img/fb.png">Facebook</a></li>
+							<li><a href="https://twitter.com/redciaq" target="__BLANK"><img src="img/tw.png">Twitter</a></li>
+							<li><a href="https://www.youtube.com/channel/UCADNpr1uDielhiXgrBPegBQ" target="__BLANK"><img src="img/yt.png">Youtube</a></li>
 						</ul>
 					</div>
 				</div>
