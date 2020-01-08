@@ -23,3 +23,7 @@ function less(nombre){
 	foto.style.display="block";
 	info.style.display="none";
 }
+
+function navegar(url){
+	window.location.assign(`${url}.html`);
+}

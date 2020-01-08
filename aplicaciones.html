@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hidroinformática</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Estilo -->
+	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+	<!-- Js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <!-- Font -->
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="barra col-xs-12 nopadding">
+		<div class="logo">
+			<img src="img/redciaq.png">
+		</div>
+
+		<div class="menu hidden-xs hidden-sm nopadding">
+			<ul class="end">
+				<li class="flex col-xs-2"><a href="nosotros.html">NOSOTROS</a></li>
+	            <li class="flex col-xs-2"><a href="meteorologia.html">METEOROLOGÍA</a></li>
+	            <li class="flex col-xs-2"><a href="#">TORMENTAS</a></li>
+	            <li class="flex col-xs-2"><a href="#">PRENSA</a></li>
+	            <li class="flex col-xs-2"><a href="#">HERRAMIENTAS</a></li>
+			</ul>
+		</div>
+
+		<div class="ham hidden-md hidden-lg flex">
+			<img src="img/list.png" onclick="goOptions()">
+		</div>
+
+		<div class="menu-m hidden-md hidden-lg nopadding" id="options">
+			<ul class="vertical">
+				<li class="flex col-xs-12 bt"><a href="#">NOSOTROS</a></li>
+	            <li class="flex col-xs-12"><a href="#">METEOROLOGÍA</a></li>
+	            <li class="flex col-xs-12"><a href="#">TORMENTAS</a></li>
+	            <li class="flex col-xs-12"><a href="#">PRENSA</a></li>
+	            <li class="flex col-xs-12 bb"><a href="#">HERRAMIENTAS</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrapper" id="wrapper">
+		<div class="content col-xs-12 nopadding">
+
+			<a href="herramientas.html" class="back">⤶ Regresar a menú de herramientas</a>
+
+			<h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Aplicaciones</h2>
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ccenter">
+					<h2 class="justify" style="font-size: 1.6rem;">Curvas IDR Querétaro</h2>
+
+					<br>
+
+					<p class="center">Versión demo funcional únicamente en el estado de Querétaro, <br> de acuerdo a tu versión de Windows, descarga la versión adecuada para 32 bits o 64 bits</p>
+
+					<br>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p class="center">Paso <span class="num">1</span></p>
+					</div>
+
+					<p class="center">Si tu equipo no tiene Matlab, es necesario instalar Matlab Compiler Runtime, incluido en el empaquetado de descarga</p>
+
+					<br>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p class="center">Paso <span class="num">2</span></p>
+					</div>
+
+					<p class="center">Descarga el archivo correspondiente a tu equipo.</p>
+
+					<br>
+
+					<div class="btn-form flex">
+						<button>32 bits</button>
+						<span>&nbsp;</span>
+						<button>64 bits</button>
+					</div>
+
+					<br>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ccenter">
+					<h2 class="justify" style="font-size: 1.6rem;">pcx a bmp</h2>
+
+					<br>
+
+					<p class="center">Convierte imágenes en formato pcx a bmp</p>
+
+					<p class="center">Programa para Sistema Operativo Windows</p>
+
+					<br>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p class="center">Paso <span class="num">1</span></p>
+					</div>
+
+					<p class="center">Descargar el archivo y descomprimir los elementos</p>
+
+					<br>
+
+					<div class="btn-form flex">
+						<button>Descargar</button>
+					</div>
+
+					<br>
+				</div>
+			</div>
+
+			<footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="uno col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<h2>Mapa del sitio</h2>
+
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding">
+						<ul>
+							<li><a href="nosotros.html">Nosotros</a></li>
+							<li><a href="meteorologia.html">Meteorología</a></li>
+							<li><a href="#">Tormentas</a></li>
+							<li><a href="#">Prensa</a></li>
+							<li><a href="#">Herramientas</a></li>
+						</ul>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding">
+						<ul>
+							<li><a href="https://www.uaq.mx/">UAQ</a></li>
+							<li><a href="https://ingenieria.uaq.mx/">Facultad de Ingeniería</a></li>
+							<li><a href="https://www.uaq.mx/informatica/">Facultad de Informática</a></li>
+							<li><a href="https://planeacion.uaq.mx/index.php/unidades/unidad-de-gestion-institucional/subunidad-academica/prodep">PRODEP</a></li>
+							<li><a href="#">Iniciar sesión</a></li>
+						</ul>
+					</div>	
+				</div>
+
+				<div class="uno col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<h2>Visítanos</h2>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding">
+						<ul>
+							<li>Centro Universitario, Cerro de las Campanas s/n</li>
+							<li>C.P. 76010, Centro Universitario</li>
+							<li>Santiago de Querétaro, Qro.</li>
+							<li>Tel: +52 (442) 192-12-00</li>
+							<li>redciaq@uaq.mx</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="uno col-xs-12 col-sm-12 col-md-2 col-lg-2">
+					<h2>Síguenos</h2>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding">
+						<ul>
+							<li><a href="https://www.facebook.com/redciaq"><img src="img/fb.png">Facebook</a></li>
+							<li><a href="https://twitter.com/redciaq"><img src="img/tw.png">Twitter</a></li>
+							<li><a href="https://www.youtube.com/channel/UCADNpr1uDielhiXgrBPegBQ"><img src="img/yt.png">Youtube</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="uno col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<h2>Colaboradores</h2>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding">
+						<div class="col-xs-3 col-md-3 colab flex">
+							<img src="img/redciaq.png">
+						</div>
+						<div class="col-xs-3 col-md-3 colab flex">
+							<img src="img/info.png">
+						</div>
+						<div class="col-xs-3 col-md-3 colab flex">
+							<img src="img/uaqb.png">
+						</div>
+						<div class="col-xs-3 col-md-3 colab flex">
+							<img src="img/ing.png">
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+</body>
+</html>
