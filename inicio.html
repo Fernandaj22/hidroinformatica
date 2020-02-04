@@ -15,18 +15,46 @@
     <!-- Font -->
     <link href="css/fontawesome/css/all.css" rel="stylesheet">
 </head>
-<body>
+<body id="backImg2">
 
-	<div class="wrapper" id="wrapper" style="height: 100%;">
+	<div class="barra col-xs-12 nopadding">
+		<div class="logo">
+			<img src="img/redciaq.png" onclick="navegar('barra');">
+		</div>
+
+		<div class="menu hidden-xs hidden-sm nopadding">
+			<ul class="end">
+				<li class="flex col-xs-2"><a href="nosotros.html">NOSOTROS</a></li>
+	            <li class="flex col-xs-2"><a href="meteorologia.html">METEOROLOGÍA</a></li>
+	            <li class="flex col-xs-2"><a href="tormentas.html">TORMENTAS</a></li>
+	            <li class="flex col-xs-2"><a href="prensa.html">PRENSA</a></li>
+	            <li class="flex col-xs-2"><a href="herramientas.html">HERRAMIENTAS</a></li>
+			</ul>
+		</div>
+
+		<div class="ham hidden-md hidden-lg flex">
+			<img src="img/list.png" onclick="goOptions()">
+		</div>
+
+		<div class="menu-m hidden-md hidden-lg nopadding" id="options">
+			<ul class="vertical">
+				<li class="flex col-xs-12 bt"><a href="nosotros.html">NOSOTROS</a></li>
+	            <li class="flex col-xs-12"><a href="meteorologia.html">METEOROLOGÍA</a></li>
+	            <li class="flex col-xs-12"><a href="tormentas.html">TORMENTAS</a></li>
+	            <li class="flex col-xs-12"><a href="prensa.html">PRENSA</a></li>
+	            <li class="flex col-xs-12 bb"><a href="herramientas.html">HERRAMIENTAS</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrapper" id="wrapper">
 		<div class="content col-xs-12 nopadding">
-			<div class="hidden-xs col-sm-1 col-md-1 col-lg-1 tres ccenter">
-				<div class="flex">
-					<!-- <img class="log" src="img/redciaq.png"> -->
-				</div>
-			</div>
+			<div class="col-xs-12 nueve ccenter">
+				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 column datos">
+					<h1>Inicio de Sesión en RedCIAQ</h1>
 
-			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 nueve ccenter">
-				<div class="column">
+					<br>
+
 					<p>Usuario</p>
 					<input type="text" name="">
 
@@ -34,6 +62,12 @@
 
 					<p>Contraseña</p>
 					<input type="password" name="">
+
+					<br>
+
+					<button>Iniciar sesión</button>
+
+					<h3>Si olvido sus datos de inicio de sesión, contacte al administrador del sitio.</h3>
 				</div>
 			</div>
 		</div>
